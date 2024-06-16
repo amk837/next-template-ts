@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint-config-next",
+    "airbnb"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "max-len": ["error", { "code": 160 }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-a11y/anchor-has-content": 0,
+    "jsx-a11y/anchor-is-valid": "warn",
+    "no-param-reassign": ["error", { "props": false }],
+    "react/require-default-props": "off",
+    "import/extensions": "off",
+    "no-absolute-path": "off"
+  }
+}
