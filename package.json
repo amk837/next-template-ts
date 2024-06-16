@@ -30,23 +30,14 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "globals": "^15.5.0",
-    "prettier": "3.3.2",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "post-commit": "npm run success-message",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "husky": "^9.0.11",
+    "typescript": "^5.4.5"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,html}": [
-      "npm run lint"
+    "*.(js|ts|tsx)": [
+      "eslint --fix "
     ]
   },
   "commitlint": {
